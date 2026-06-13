@@ -19,7 +19,7 @@ export default function InsightCard() {
   const topKeyword = keywordData[0];
 
   return (
-    <div className="card">
+    <div className="card insight-card">
       <h2>📊 Insight Summary</h2>
 
       <p>

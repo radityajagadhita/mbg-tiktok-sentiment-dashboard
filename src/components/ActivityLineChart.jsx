@@ -104,7 +104,8 @@ export default function ActivityLineChart() {
             )).toLocaleString()}
         </strong>{" "}
         comments in one day.
-        </p>
+          </p>
+          <br/>
     </div>
   );
 }

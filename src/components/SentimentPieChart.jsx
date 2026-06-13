@@ -84,13 +84,11 @@ export default function SentimentPieChart() {
           {total.toLocaleString()}
         </strong>
           </div>
+          <br/>
           <div>
         Dominant sentiment:
         <strong>
           {" "}{dominant.name}</strong>
-      </div>
-      <div>
-        
       </div>
     </div>
   );

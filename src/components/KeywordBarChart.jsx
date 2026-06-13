@@ -53,28 +53,41 @@ export default function KeywordBarChart() {
 
           <XAxis
             type="number"
-            tick={{ fill: "#cbd5e1" }}
+            tick={{ fill: "#000000" }}
           />
 
           <YAxis
             type="category"
             dataKey="keyword"
-            tick={{ fill: "#cbd5e1" }}
+            tick={{ fill: "#000000" }}
             width={100}
           />
 
           <Tooltip
             formatter={(value) => [
-              value.toLocaleString(),
-              "Frequency",
+                value.toLocaleString(),
+                "Mentions",
             ]}
             contentStyle={{
-              backgroundColor: "#1e293b",
-              border: "none",
-              borderRadius: "10px",
-              color: "#fff",
+                backgroundColor: "#0f172a",
+                border: "1px solid #334155",
+                borderRadius: "12px",
+                color: "#ffffff",
+                fontSize: "14px",
+                fontWeight: "600",
+                boxShadow:
+                "0 10px 25px rgba(0,0,0,0.35)"
             }}
-          />
+
+            labelStyle={{
+                color: "#ffffff",
+                fontWeight: "700"
+            }}
+
+            itemStyle={{
+                color: "#38bdf8"
+            }}
+            />
 
           <Bar
             dataKey="count"
@@ -94,7 +107,7 @@ export default function KeywordBarChart() {
       <div
         style={{
             marginTop: "15px",
-            color: "#94a3b8",
+            color: "#020202",
         }}
         >
         Keyword paling dominan adalah{" "}
@@ -105,6 +118,7 @@ export default function KeywordBarChart() {
         <strong>
             {keywordData[0]?.count.toLocaleString()}
         </strong>
+        {" "}
         kemunculan.
           </div>
           <br/>

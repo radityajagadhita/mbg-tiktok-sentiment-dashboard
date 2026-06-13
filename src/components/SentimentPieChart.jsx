@@ -74,7 +74,7 @@ export default function SentimentPieChart() {
       <div
         style={{
           marginTop: "10px",
-          color: "#94a3b8",
+          color: "#000000",
           textAlign: "center",
         }}
       >

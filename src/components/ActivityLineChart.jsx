@@ -11,10 +11,63 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
+const CustomTooltip = ({
+  active,
+  payload,
+  label,
+}) => {
+  if (
+    active &&
+    payload &&
+    payload.length
+  ) {
+    return (
+      <div
+        style={{
+          background: "#0f172a",
+          color: "#ffffff",
+          padding: "12px",
+          borderRadius: "10px",
+          border: "1px solid #334155",
+          boxShadow:
+            "0 4px 15px rgba(0,0,0,.25)",
+        }}
+      >
+        <div
+          style={{
+            marginBottom: "6px",
+            fontWeight: "600",
+          }}
+        >
+          {new Date(label).toLocaleDateString(
+            "id-ID",
+            {
+              day: "numeric",
+              month: "long",
+              year: "numeric",
+            }
+          )}
+        </div>
+
+        <div>
+          Comments:
+          <strong>
+            {" "}
+            {payload[0].value.toLocaleString()}
+          </strong>
+        </div>
+      </div>
+    );
+  }
+
+  return null;
+};
+
 export default function ActivityLineChart() {
   return (
     <div className="card">
-      <h2>📈 Daily Activity</h2>
+          <h2>📈 Daily Activity</h2>
+          <br/>
 
       <ResponsiveContainer width="100%" height={400}>
         <AreaChart data={activityData}>
@@ -55,30 +108,21 @@ export default function ActivityLineChart() {
             />
 
           <YAxis
-            tick={{ fill: "#cbd5e1" }}
+            tick={{ fill: "#000000" }}
             tickLine={false}
           />
 
           <Tooltip
-            contentStyle={{
-              backgroundColor: "#1e293b",
-              border: "none",
-              borderRadius: "10px",
-              color: "#fff",
-            }}
-            formatter={(value) => [
-                value.toLocaleString(),
-                "Comments",
-            ]}
-          />
+            content={<CustomTooltip />}
+            />
 
           <Area
             type="monotone"
             dataKey="count"
+            name=""
             stroke="none"
             fill="url(#activityGradient)"
-          />
-
+            />
           <Line
             type="monotone"
             dataKey="count"
@@ -93,7 +137,7 @@ export default function ActivityLineChart() {
       </ResponsiveContainer>
       <p
         style={{
-            color: "#94a3b8",
+            color: "#000000",
             marginTop: "10px",
         }}
         >

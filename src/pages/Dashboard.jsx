@@ -10,6 +10,7 @@ import ActivityLineChart from "../components/ActivityLineChart";
 
 import InsightCard from "../components/InsightCard";
 
+import SentimentTrendChart from "../components/SentimentTrendChart";
 export default function Dashboard() {
 
   return (
@@ -24,6 +25,8 @@ export default function Dashboard() {
         <KeywordBarChart />
 
       </div>
+
+      <SentimentTrendChart />
 
       <ActivityLineChart />
 

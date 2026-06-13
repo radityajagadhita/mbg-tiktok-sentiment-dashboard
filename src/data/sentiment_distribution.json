@@ -1,0 +1,14 @@
+[
+    {
+        "name":"Neutral",
+        "value":37104
+    },
+    {
+        "name":"Positive",
+        "value":14039
+    },
+    {
+        "name":"Negative",
+        "value":2175
+    }
+]

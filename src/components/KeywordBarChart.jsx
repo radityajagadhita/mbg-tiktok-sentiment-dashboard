@@ -25,6 +25,11 @@ export default function KeywordBarChart() {
     "#f97316",
     "#14b8a6",
   ];
+  const filteredKeywords = keywordData.filter(
+  item =>
+    item.keyword &&
+          item.keyword.trim() !== "")
+      .slice(0, 10);
 
   return (
     <div className="card">
@@ -32,7 +37,7 @@ export default function KeywordBarChart() {
 
       <ResponsiveContainer width="100%" height={450}>
         <BarChart
-          data={keywordData}
+          data={filteredKeywords}
           layout="vertical"
           margin={{
             top: 20,
@@ -101,7 +106,8 @@ export default function KeywordBarChart() {
             {keywordData[0]?.count.toLocaleString()}
         </strong>
         kemunculan.
-        </div>
+          </div>
+          <br/>
     </div>
   );
 }

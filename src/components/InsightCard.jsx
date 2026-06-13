@@ -21,7 +21,7 @@ export default function InsightCard() {
   return (
     <div className="card insight-card">
       <h2>📊 Insight Summary</h2>
-
+        <br/>
       <p>
         Mayoritas komentar memiliki sentimen{" "}
         <strong>{dominant.name}</strong>

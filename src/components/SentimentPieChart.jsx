@@ -41,7 +41,7 @@ export default function SentimentPieChart() {
             cy="50%"
             outerRadius={130}
             innerRadius={60}
-            label={({ name, percent }) =>
+            label={({ percent }) =>
               `${(percent * 100).toFixed(1)}%`
             }
           >

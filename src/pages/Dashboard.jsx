@@ -11,6 +11,9 @@ import ActivityLineChart from "../components/ActivityLineChart";
 import InsightCard from "../components/InsightCard";
 
 import SentimentTrendChart from "../components/SentimentTrendChart";
+
+import KeywordWordCloud3D from "../components/KeywordWordCloud3D";
+
 export default function Dashboard() {
 
   return (
@@ -25,6 +28,8 @@ export default function Dashboard() {
         <KeywordBarChart />
 
       </div>
+
+      <KeywordWordCloud3D />
 
       <SentimentTrendChart />
 

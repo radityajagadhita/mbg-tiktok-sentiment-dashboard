@@ -1,16 +1,17 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import WordCloud from "wordcloud";
-import keywordData from "../data/top_keywords_final.json";
+import keywordData from "../data/top_keywords_final_4.json";
 
 const MAIN_COLORS = [
-  "#f8fafc",
-  "#dbeafe",
-  "#bae6fd",
-  "#ccfbf1",
-  "#fef3c7",
+  "#2563eb",
+  "#0f766e",
+  "#16a34a",
+  "#ea580c",
+  "#7c3aed",
+  "#0891b2",
 ];
 
-const MAX_WORDS = 40;
+const MAX_WORDS = 100;
 
 function getCleanKeywords() {
   return keywordData
@@ -25,12 +26,7 @@ function makeMainList(words) {
 
   return words.map((item, index) => {
     const weight = (item.count - min) / spread;
-    return [
-      item.keyword,
-      18 + weight * 42,
-      item.count,
-      index,
-    ];
+    return [item.keyword, 18 + weight * 42, item.count, index];
   });
 }
 
@@ -102,7 +98,7 @@ export default function KeywordWordCloud3D() {
         list: fieldList,
         backgroundColor: "rgba(0,0,0,0)",
         clearCanvas: true,
-        color: () => "rgba(255,255,255,0.58)",
+        color: () => "rgba(15, 23, 42, 0.14)",
         fontFamily: "Inter, Segoe UI, sans-serif",
         fontWeight: "600",
         gridSize: Math.max(4, Math.round(width / 150)),
@@ -130,9 +126,14 @@ export default function KeywordWordCloud3D() {
           backgroundColor: "rgba(0,0,0,0)",
           clearCanvas: true,
           color: (word, weight, fontSize, distance, theta) => {
-            const hue = MAIN_COLORS[Math.abs(Math.round(theta * 10)) % MAIN_COLORS.length];
-            const alpha = Math.max(0.72, 1 - distance * 0.42);
-            return `${hue}${Math.round(alpha * 255).toString(16).padStart(2, "0")}`;
+            const hue =
+              MAIN_COLORS[
+                Math.abs(Math.round(theta * 10)) % MAIN_COLORS.length
+              ];
+            const alpha = Math.max(0.7, 1 - distance * 0.34);
+            return `${hue}${Math.round(alpha * 255)
+              .toString(16)
+              .padStart(2, "0")}`;
           },
           fontFamily: "Inter, Segoe UI, sans-serif",
           fontWeight: (word, weight) => (weight > 36 ? "800" : "700"),
@@ -203,13 +204,19 @@ export default function KeywordWordCloud3D() {
     const rect = event.currentTarget.getBoundingClientRect();
     const x = event.clientX - rect.left;
     const y = event.clientY - rect.top;
-    const tiltX = ((y / rect.height) - 0.5) * -9;
-    const tiltY = ((x / rect.width) - 0.5) * 12;
+    const tiltX = (y / rect.height - 0.5) * -9;
+    const tiltY = (x / rect.width - 0.5) * 12;
 
     event.currentTarget.style.setProperty("--tilt-x", `${tiltX}deg`);
     event.currentTarget.style.setProperty("--tilt-y", `${tiltY}deg`);
-    event.currentTarget.style.setProperty("--beam-x", `${(x / rect.width) * 100}%`);
-    event.currentTarget.style.setProperty("--beam-y", `${(y / rect.height) * 100}%`);
+    event.currentTarget.style.setProperty(
+      "--beam-x",
+      `${(x / rect.width) * 100}%`,
+    );
+    event.currentTarget.style.setProperty(
+      "--beam-y",
+      `${(y / rect.height) * 100}%`,
+    );
     setPointer({ x, y });
   };
 
@@ -267,9 +274,9 @@ export default function KeywordWordCloud3D() {
       </div>
 
       <p className="wordcloud-summary">
-        Keyword paling menonjol adalah <strong>{strongest?.keyword}</strong>
-        {" "}dengan <strong>{strongest?.count.toLocaleString("id-ID")}</strong>
-        {" "}kemunculan. Klik kata untuk mengunci detailnya.
+        Keyword paling menonjol adalah <strong>{strongest?.keyword}</strong>{" "}
+        dengan <strong>{strongest?.count.toLocaleString("id-ID")}</strong>{" "}
+        kemunculan. Klik kata untuk mengunci detailnya.
       </p>
     </div>
   );

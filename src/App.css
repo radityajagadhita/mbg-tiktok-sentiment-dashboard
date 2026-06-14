@@ -123,16 +123,15 @@ body {
   height: 520px;
   margin-top: 18px;
   overflow: hidden;
-  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
   background:
-    radial-gradient(circle at var(--beam-x) var(--beam-y), rgba(255, 255, 255, 0.18), transparent 12%),
-    radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.18), transparent 23%),
-    radial-gradient(circle at 50% 48%, rgba(20, 184, 166, 0.13), transparent 36%),
-    linear-gradient(135deg, #080b11 0%, #101820 47%, #050608 100%);
+    radial-gradient(circle at var(--beam-x) var(--beam-y), rgba(37, 99, 235, 0.12), transparent 18%),
+    radial-gradient(circle at 50% 50%, rgba(20, 184, 166, 0.08), transparent 34%),
+    linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
   box-shadow:
-    inset 0 0 0 1px rgba(255, 255, 255, 0.08),
-    inset 0 0 60px rgba(0, 0, 0, 0.48),
-    0 18px 45px rgba(15, 23, 42, 0.18);
+    inset 0 1px 0 rgba(255, 255, 255, 0.9),
+    inset 0 -30px 60px rgba(15, 118, 110, 0.05);
   isolation: isolate;
   perspective: 900px;
 }
@@ -147,35 +146,19 @@ body {
 
 .wordcloud-space::before {
   background:
-    repeating-radial-gradient(
-      circle at center,
-      rgba(255, 255, 255, 0.16) 0 1px,
-      transparent 2px 16px
-    );
-  opacity: 0.16;
+    linear-gradient(rgba(148, 163, 184, 0.12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.12) 1px, transparent 1px);
+  background-size: 34px 34px;
+  opacity: 0.32;
   transform: rotate(8deg);
-  animation: wordcloud-star-drift 26s linear infinite;
+  animation: wordcloud-grid-drift 24s linear infinite;
 }
 
 .wordcloud-space::after {
   background:
-    conic-gradient(
-      from 0deg at 50% 50%,
-      transparent 0deg,
-      rgba(255, 255, 255, 0.22) 9deg,
-      transparent 17deg,
-      transparent 36deg,
-      rgba(14, 165, 233, 0.16) 42deg,
-      transparent 48deg,
-      transparent 86deg,
-      rgba(255, 255, 255, 0.14) 94deg,
-      transparent 103deg,
-      transparent 360deg
-    );
-  filter: blur(1px);
-  opacity: 0.38;
-  transform: scale(1.28);
-  animation: wordcloud-radar 18s linear infinite;
+    radial-gradient(circle at 50% 50%, transparent 0 28%, rgba(37, 99, 235, 0.1) 29%, transparent 30% 49%, rgba(15, 118, 110, 0.09) 50%, transparent 51%);
+  opacity: 0.6;
+  transform: scale(1.08);
 }
 
 .wordcloud-tunnel {
@@ -184,8 +167,8 @@ body {
   z-index: 1;
   border-radius: 50%;
   background:
-    radial-gradient(circle, transparent 0 18%, rgba(255, 255, 255, 0.1) 19%, transparent 20% 33%, rgba(125, 211, 252, 0.11) 34%, transparent 35% 52%, rgba(255, 255, 255, 0.08) 53%, transparent 54%);
-  opacity: 0.7;
+    radial-gradient(circle, transparent 0 18%, rgba(37, 99, 235, 0.1) 19%, transparent 20% 33%, rgba(15, 118, 110, 0.1) 34%, transparent 35% 52%, rgba(148, 163, 184, 0.12) 53%, transparent 54%);
+  opacity: 0.65;
   transform:
     rotateX(66deg)
     rotateZ(-12deg)
@@ -206,8 +189,8 @@ body {
 }
 
 .wordcloud-canvas-field {
-  opacity: 0.52;
-  filter: blur(0.6px);
+  opacity: 0.42;
+  filter: blur(0.35px);
   transform:
     rotateX(var(--tilt-x))
     rotateY(var(--tilt-y))
@@ -220,8 +203,8 @@ body {
   cursor: pointer;
   opacity: 0;
   filter:
-    drop-shadow(0 0 10px rgba(255, 255, 255, 0.32))
-    drop-shadow(0 0 24px rgba(56, 189, 248, 0.18));
+    drop-shadow(0 10px 18px rgba(15, 23, 42, 0.12))
+    drop-shadow(0 0 18px rgba(37, 99, 235, 0.08));
   transform:
     rotateX(var(--tilt-x))
     rotateY(var(--tilt-y))
@@ -243,7 +226,7 @@ body {
   left: 50%;
   top: 50%;
   z-index: 3;
-  color: rgba(255, 255, 255, 0.82);
+  color: #334155;
   font-size: 13px;
   font-weight: 700;
   transform: translate(-50%, -50%);
@@ -257,13 +240,13 @@ body {
   min-width: 148px;
   max-width: 220px;
   padding: 10px 12px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid #dbeafe;
   border-radius: 10px;
-  color: white;
+  color: #0f172a;
   text-align: left;
-  background: rgba(8, 13, 22, 0.82);
+  background: rgba(255, 255, 255, 0.94);
   backdrop-filter: blur(10px);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.36);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.16);
   cursor: pointer;
 }
 
@@ -273,12 +256,12 @@ body {
 }
 
 .wordcloud-tooltip span {
-  color: #bae6fd;
+  color: #2563eb;
   font-size: 12px;
 }
 
 .wordcloud-tooltip:hover {
-  border-color: rgba(186, 230, 253, 0.7);
+  border-color: #93c5fd;
 }
 
 .wordcloud-summary {
@@ -287,36 +270,26 @@ body {
   text-align: left;
 }
 
-@keyframes wordcloud-star-drift {
+@keyframes wordcloud-grid-drift {
   from {
-    transform: rotate(8deg) scale(1);
+    transform: translate3d(0, 0, 0);
   }
 
   to {
-    transform: rotate(368deg) scale(1.08);
-  }
-}
-
-@keyframes wordcloud-radar {
-  from {
-    transform: rotate(0deg) scale(1.28);
-  }
-
-  to {
-    transform: rotate(360deg) scale(1.28);
+    transform: translate3d(34px, 34px, 0);
   }
 }
 
 @keyframes wordcloud-field-pulse {
   0%,
   100% {
-    opacity: 0.42;
-    filter: blur(0.8px);
+    opacity: 0.28;
+    filter: blur(0.45px);
   }
 
   50% {
-    opacity: 0.68;
-    filter: blur(0.35px);
+    opacity: 0.48;
+    filter: blur(0.2px);
   }
 }
 

@@ -10,7 +10,7 @@ import {
 } from "recharts";
 
 const COLORS = [
-  "#64748b", // Neutral
+  "#9ba6b6", // Neutral
   "#22c55e", // Positive
   "#ef4444", // Negative
 ];
@@ -74,7 +74,7 @@ export default function SentimentPieChart() {
       <div
         style={{
           marginTop: "10px",
-          color: "#000000",
+          color: "#ffffff",
           textAlign: "center",
         }}
       >

@@ -26,12 +26,24 @@ export default function SentimentTrendChart() {
             strokeDasharray="3 3"
           />
 
-          <XAxis dataKey="month" />
+          <XAxis dataKey="month"
+          tick={{ fill: "#ffffff" }}
+          />
 
-          <YAxis />
+          <YAxis tick={{ fill: "#ffffff" }} />
 
           <Tooltip 
-          formatter={(value) => value.toLocaleString()}
+            formatter={(value) => value.toLocaleString()}
+            contentStyle={{
+                backgroundColor: "#0f172a",
+                border: "1px solid #334155",
+                borderRadius: "12px",
+                color: "#ffffff",
+                fontSize: "14px",
+                fontWeight: "600",
+                boxShadow:
+                "0 10px 25px rgba(0,0,0,0.35)"
+            }}
           />
 
           <Legend />
@@ -46,7 +58,7 @@ export default function SentimentTrendChart() {
           <Line
             type="monotone"
             dataKey="Neutral"
-            stroke="#64748b"
+            stroke="#9ba6b6"
             strokeWidth={3}
           />
 

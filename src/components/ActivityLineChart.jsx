@@ -80,7 +80,7 @@ export default function ActivityLineChart() {
     <div className="card activity-chart-card" id="daily-activity">
       <div className="chart-title-row">
         <div>
-          <h2>📈 Daily Activity</h2>
+          <h2>Daily Activity</h2>
           <p className="chart-subtitle">
             Aktivitas komentar harian. Gunakan{" "}
             <strong>slider di bawah</strong> untuk zoom ke rentang tanggal
@@ -112,14 +112,14 @@ export default function ActivityLineChart() {
           <XAxis
             dataKey="date"
             tickFormatter={fmtDate}
-            tick={{ fill: "#64748b", fontSize: 11 }}
+            tick={{ fill: "#ffffff", fontSize: 11 }}
             axisLine={false}
             tickLine={false}
             interval="preserveStartEnd"
           />
 
           <YAxis
-            tick={{ fill: "#64748b", fontSize: 12 }}
+            tick={{ fill: "#fdfdfd", fontSize: 12 }}
             axisLine={false}
             tickLine={false}
             tickFormatter={(v) => v.toLocaleString("id-ID")}

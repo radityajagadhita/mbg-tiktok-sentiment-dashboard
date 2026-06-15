@@ -11,7 +11,6 @@ export default function Header() {
   return (
     <div className="header">
       <div className="header-left-group">
-        <input className="header-search" placeholder="Search section..." />
         <nav className="quick-nav" aria-label="Jump to dashboard sections">
           {quickLinks.map((item) => (
             <a key={item.target} className="nav-chip" href={item.target}>
@@ -21,7 +20,6 @@ export default function Header() {
         </nav>
       </div>
 
-      <div className="header-date">Mei 2025</div>
     </div>
   );
 }

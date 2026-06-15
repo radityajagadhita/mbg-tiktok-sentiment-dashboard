@@ -173,23 +173,29 @@ body {
 .wordcloud-space {
   --tilt-x: 0deg;
   --tilt-y: 0deg;
-  --beam-x: 50%;
-  --beam-y: 50%;
+
   position: relative;
-  height: 520px;
+  height: 460px;
+
   margin-top: 18px;
   overflow: hidden;
-  border: 1px solid #e2e8f0;
-  border-radius: 12px;
+
+  border-radius: 16px;
+
+  border: 1px solid rgba(59, 130, 246, .15);
+
   background:
-    radial-gradient(circle at var(--beam-x) var(--beam-y), rgba(37, 99, 235, 0.12), transparent 18%),
-    radial-gradient(circle at 50% 50%, rgba(20, 184, 166, 0.08), transparent 34%),
-    linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+    radial-gradient(circle at center,
+      rgba(59, 130, 246, .12),
+      transparent 45%),
+
+    linear-gradient(180deg,
+      rgba(15, 23, 42, .98),
+      rgba(8, 47, 73, .95));
+
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.9),
-    inset 0 -30px 60px rgba(15, 118, 110, 0.05);
-  isolation: isolate;
-  perspective: 900px;
+    inset 0 1px 0 rgba(255, 255, 255, .04),
+    0 10px 30px rgba(0, 0, 0, .25);
 }
 
 .wordcloud-space::before,
@@ -205,17 +211,24 @@ body {
     linear-gradient(rgba(148, 163, 184, 0.12) 1px, transparent 1px),
     linear-gradient(90deg, rgba(148, 163, 184, 0.12) 1px, transparent 1px);
   background-size: 34px 34px;
-  opacity: 0.32;
+  opacity: 0.08;
   transform: rotate(8deg);
   animation: wordcloud-grid-drift 24s linear infinite;
 }
 
-.wordcloud-space::after {
-  background:
-    radial-gradient(circle at 50% 50%, transparent 0 28%, rgba(37, 99, 235, 0.1) 29%, transparent 30% 49%, rgba(15, 118, 110, 0.09) 50%, transparent 51%);
-  opacity: 0.6;
-  transform: scale(1.08);
-}
+
+  .wordcloud-space::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+  
+      background:
+        radial-gradient(circle at center,
+          rgba(59, 130, 246, .06),
+          transparent 60%);
+  
+      opacity: 1;
+    }
 
 .wordcloud-tunnel {
   position: absolute;

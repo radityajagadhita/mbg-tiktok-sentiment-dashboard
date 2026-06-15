@@ -3,15 +3,15 @@ import WordCloud from "wordcloud";
 import keywordData from "../data/top_keywords_final_4.json";
 
 const MAIN_COLORS = [
-  "#2563eb",
-  "#0f766e",
-  "#16a34a",
-  "#ea580c",
-  "#7c3aed",
-  "#0891b2",
+  "#60a5fa", // biru terang
+  "#22d3ee", // cyan
+  "#4ade80", // hijau terang
+  "#fbbf24", // kuning amber
+  "#fb7185", // pink
+  "#a78bfa", // ungu terang
 ];
 
-const MAX_WORDS = 100;
+const MAX_WORDS = 60;
 
 function getCleanKeywords() {
   return keywordData
@@ -98,7 +98,7 @@ export default function KeywordWordCloud3D() {
         list: fieldList,
         backgroundColor: "rgba(0,0,0,0)",
         clearCanvas: true,
-        color: () => "rgba(15, 23, 42, 0.14)",
+        color: () => "rgba(148,163,184,0.12)",
         fontFamily: "Inter, Segoe UI, sans-serif",
         fontWeight: "600",
         gridSize: Math.max(4, Math.round(width / 150)),
@@ -137,7 +137,7 @@ export default function KeywordWordCloud3D() {
           },
           fontFamily: "Inter, Segoe UI, sans-serif",
           fontWeight: (word, weight) => (weight > 36 ? "800" : "700"),
-          gridSize: Math.max(8, Math.round(width / 72)),
+          gridSize: Math.max(10, Math.round(width / 55)),
           weightFactor: (weight) => weight,
           minSize: 9,
           rotateRatio: 0.18,
@@ -145,8 +145,8 @@ export default function KeywordWordCloud3D() {
           minRotation: -0.22,
           maxRotation: 0.22,
           shape: "circle",
-          ellipticity: 0.68,
-          shuffle: false,
+          ellipticity: 0.45,
+          shuffle: true,
           drawOutOfBound: false,
           shrinkToFit: true,
           wait: 8,
@@ -273,7 +273,7 @@ export default function KeywordWordCloud3D() {
         )}
       </div>
 
-      <p className="wordcloud-summary">
+      <p className="wordcloud-summary" style={{ marginTop: "12px" , color: "#ffffff" }}>
         Keyword paling menonjol adalah <strong>{strongest?.keyword}</strong>{" "}
         dengan <strong>{strongest?.count.toLocaleString("id-ID")}</strong>{" "}
         kemunculan. Klik kata untuk mengunci detailnya.

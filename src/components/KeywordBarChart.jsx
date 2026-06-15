@@ -58,13 +58,13 @@ export default function KeywordBarChart() {
 
           <XAxis
             type="number"
-            tick={{ fill: "#000000" }}
+            tick={{ fill: "#ffffff" }}
           />
 
           <YAxis
             type="category"
             dataKey="keyword"
-            tick={{ fill: "#000000" }}
+            tick={{ fill: "#ffffff" }}
             width={100}
           />
 

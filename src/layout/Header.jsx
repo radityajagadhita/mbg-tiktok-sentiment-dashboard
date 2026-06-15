@@ -1,16 +1,27 @@
-export default function Header() {
+const quickLinks = [
+  { label: "Sentiment Distribution", target: "#sentiment-distribution" },
+  { label: "Top Keywords", target: "#top-keywords" },
+  { label: "Top Keywords 3D Word Cloud", target: "#top-keywords-3d" },
+  { label: "Sentiment Trend", target: "#sentiment-trend" },
+  { label: "Daily Activity", target: "#daily-activity" },
+  { label: "Insight Summary", target: "#insight-summary" },
+];
 
+export default function Header() {
   return (
     <div className="header">
-
-      <input
-        placeholder="Search..."
-      />
-
-      <div>
-        Mei 2025
+      <div className="header-left-group">
+        <input className="header-search" placeholder="Search section..." />
+        <nav className="quick-nav" aria-label="Jump to dashboard sections">
+          {quickLinks.map((item) => (
+            <a key={item.target} className="nav-chip" href={item.target}>
+              {item.label}
+            </a>
+          ))}
+        </nav>
       </div>
 
+      <div className="header-date">Mei 2025</div>
     </div>
   );
 }

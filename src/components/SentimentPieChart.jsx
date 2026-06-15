@@ -27,8 +27,8 @@ export default function SentimentPieChart() {
   );
 
   return (
-    <div className="card">
-      <h2>😊 Sentiment Distribution</h2>
+    <div className="card" id="sentiment-distribution">
+      <h2>Sentiment Distribution</h2>
 
       <ResponsiveContainer width="100%" height={400}>
         <PieChart>

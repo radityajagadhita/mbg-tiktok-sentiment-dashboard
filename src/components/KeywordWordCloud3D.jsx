@@ -225,7 +225,7 @@ export default function KeywordWordCloud3D() {
   };
 
   return (
-    <div className="card wordcloud-card">
+    <div className="card wordcloud-card" id="top-keywords-3d">
       <div className="chart-title-row">
         <div>
           <h2>Top Keywords 3D Word Cloud</h2>

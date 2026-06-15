@@ -77,7 +77,7 @@ const brushStart = Math.max(0, activityData.length - 60);
 // ─── Component ────────────────────────────────────────────────────────────────
 export default function ActivityLineChart() {
   return (
-    <div className="card activity-chart-card">
+    <div className="card activity-chart-card" id="daily-activity">
       <div className="chart-title-row">
         <div>
           <h2>📈 Daily Activity</h2>

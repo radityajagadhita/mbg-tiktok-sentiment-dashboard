@@ -1,4 +1,4 @@
-import keywordData from "../data/top_keywords_final.json";
+import keywordData from "../data/top_keywords_final_4.json";
 
 import {
   BarChart,
@@ -25,15 +25,20 @@ export default function KeywordBarChart() {
     "#f97316",
     "#14b8a6",
   ];
-  const filteredKeywords = keywordData.filter(
-  item =>
-    item.keyword &&
-          item.keyword.trim() !== "")
-      .slice(0, 10);
+  const filteredKeywords = keywordData
+    .filter((item) => item.keyword && item.keyword.trim() !== "")
+    .slice(0, 10);
+
+  const dominantKeyword = filteredKeywords[0] ?? keywordData[0] ?? null;
 
   return (
-    <div className="card">
-      <h2>🔥 Top Keywords</h2>
+    <div className="card keyword-card" id="top-keywords">
+      <div className="chart-title-row">
+        <div>
+          <h2>Top Keywords</h2>
+          <p className="chart-subtitle">Peringkat kata dominan dari data komentar terbaru.</p>
+        </div>
+      </div>
 
       <ResponsiveContainer width="100%" height={450}>
         <BarChart
@@ -91,36 +96,21 @@ export default function KeywordBarChart() {
 
           <Bar
             dataKey="count"
-            radius={[0, 10, 10, 0]}
+            radius={[0, 0, 0, 0]}
           >
-            {keywordData.map((entry, index) => (
+            {filteredKeywords.map((entry, index) => (
               <Cell
                 key={`cell-${index}`}
-                fill={
-                  colors[index % colors.length]
-                }
+                fill={colors[index % colors.length]}
               />
             ))}
           </Bar>
         </BarChart>
       </ResponsiveContainer>
-      <div
-        style={{
-            marginTop: "15px",
-            color: "#020202",
-        }}
-        >
-        Keyword paling dominan adalah{" "}
-        <strong>
-            {keywordData[0]?.keyword}
-        </strong>
-        {" "}dengan{" "}
-        <strong>
-            {keywordData[0]?.count.toLocaleString()}
-        </strong>
-        {" "}
-        kemunculan.
-          </div>
+      <div className="keyword-strong-summary">
+        Kata paling dominan saat ini adalah <strong>{dominantKeyword?.keyword}</strong>
+        dengan <strong>{dominantKeyword?.count.toLocaleString("id-ID")}</strong> kemunculan.
+      </div>
           <br/>
     </div>
   );

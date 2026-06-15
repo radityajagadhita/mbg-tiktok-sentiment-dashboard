@@ -13,8 +13,8 @@ import {
 
 export default function SentimentTrendChart() {
   return (
-    <div className="card sentiment-trend-chart">
-      <h2>📈 Sentiment Trend</h2>
+    <div className="card sentiment-trend-chart" id="sentiment-trend">
+      <h2>Sentiment Trend</h2>
 
       <ResponsiveContainer
         width="100%"

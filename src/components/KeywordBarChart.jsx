@@ -32,7 +32,7 @@ export default function KeywordBarChart() {
   const dominantKeyword = filteredKeywords[0] ?? keywordData[0] ?? null;
 
   return (
-    <div className="card keyword-card" id="top-keywords">
+    <div className="card" id="top-keywords">
       <div className="chart-title-row">
         <div>
           <h2>Top Keywords</h2>

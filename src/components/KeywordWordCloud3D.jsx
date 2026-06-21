@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import WordCloud from "wordcloud";
-import keywordData from "../data/top_keywords_final_4.json";
+import keywordData from "../data/keyword_sentiment.json";
 
 const MAIN_COLORS = [
   "#60a5fa", // biru terang
@@ -13,10 +13,33 @@ const MAIN_COLORS = [
 
 const MAX_WORDS = 60;
 
-function getCleanKeywords() {
+function getCleanKeywords(
+  searchTerm = "",
+  topN = 25,
+  sentimentFilter = "All"
+) {
   return keywordData
-    .filter((item) => item.keyword && item.keyword.trim() !== "")
-    .slice(0, MAX_WORDS);
+    .filter((item) => {
+
+      const keywordMatch =
+        item.keyword &&
+        item.keyword
+          .toLowerCase()
+          .includes(
+            searchTerm.toLowerCase()
+          );
+
+      const sentimentMatch =
+        sentimentFilter === "All"
+          ? true
+          : item.sentiment === sentimentFilter;
+
+      return (
+        keywordMatch &&
+        sentimentMatch
+      );
+    })
+    .slice(0, topN);
 }
 
 function makeMainList(words) {
@@ -52,7 +75,9 @@ function getKeyword(item) {
   return item?.[0] ?? "";
 }
 
-export default function KeywordWordCloud3D() {
+export default function KeywordWordCloud3D({ searchTerm = "",
+  topN = 25,
+  sentimentFilter = "All",}) {
   const stageRef = useRef(null);
   const fieldCanvasRef = useRef(null);
   const mainCanvasRef = useRef(null);
@@ -61,7 +86,19 @@ export default function KeywordWordCloud3D() {
   const [pointer, setPointer] = useState({ x: 50, y: 50 });
   const [isReady, setIsReady] = useState(false);
 
-  const words = useMemo(() => getCleanKeywords(), []);
+  const words = useMemo(
+    () =>
+      getCleanKeywords(
+        searchTerm,
+        topN,
+        sentimentFilter
+      ),
+    [
+      searchTerm,
+      topN,
+      sentimentFilter,
+    ]
+  );
   const mainList = useMemo(() => makeMainList(words), [words]);
   const fieldList = useMemo(() => makeFieldList(words), [words]);
   const strongest = words[0];

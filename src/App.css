@@ -488,3 +488,191 @@ body {
     align-items: flex-start;
   }
 }
+.filter-bar {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.filter-bar input,
+.filter-bar select {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(148, 163, 184, .2);
+
+  background: rgba(15, 23, 42, .95);
+
+  color: white;
+}
+
+.filter-bar input {
+  min-width: 280px;
+}
+
+.insight-highlights {
+  display: grid;
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 15px;
+
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.insight-item {
+  background:
+    rgba(255, 255, 255, .05);
+
+  border:
+    1px solid rgba(255, 255, 255, .08);
+
+  padding: 15px;
+
+  border-radius: 12px;
+}
+
+.insight-item span {
+  display: block;
+
+  color: #94a3b8;
+
+  font-size: 12px;
+
+  margin-bottom: 6px;
+}
+
+.insight-item strong {
+  font-size: 18px;
+
+  color: white;
+}
+
+.insight-body h3 {
+  margin-bottom: 12px;
+}
+
+.insight-body ul {
+  padding-left: 20px;
+}
+
+.insight-body li {
+  margin-bottom: 10px;
+
+  line-height: 1.7;
+}
+
+.sentiment-breakdown {
+  margin-top: 25px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 15px;
+}
+
+.positive-box,
+.neutral-box,
+.negative-box {
+
+  padding: 16px;
+
+  border-radius: 12px;
+
+  text-align: center;
+}
+
+.positive-box {
+  background:
+    rgba(34, 197, 94, .15);
+
+  border:
+    1px solid rgba(34, 197, 94, .3);
+}
+
+.neutral-box {
+  background:
+    rgba(148, 163, 184, .15);
+
+  border:
+    1px solid rgba(148, 163, 184, .3);
+}
+
+.negative-box {
+  background:
+    rgba(239, 68, 68, .15);
+
+  border:
+    1px solid rgba(239, 68, 68, .3);
+}
+
+.sentiment-breakdown span {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #cbd5e1;
+}
+
+.sentiment-breakdown strong {
+  font-size: 24px;
+}
+
+@media (max-width: 900px) {
+
+  .insight-highlights {
+    grid-template-columns:
+      1fr 1fr;
+  }
+
+  .sentiment-breakdown {
+    grid-template-columns:
+      1fr;
+  }
+
+    .insight-icon {
+      font-size: 14px;
+      color: #60a5fa;
+    }
+  
+    .insight-item span {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+  
+    .insight-section-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+  
+      margin-bottom: 12px;
+  
+      color: #e2e8f0;
+    }
+  
+    .sentiment-breakdown span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      gap: 8px;
+  
+      margin-bottom: 10px;
+    }
+  
+    .positive-box svg {
+      color: #22c55e;
+    }
+  
+    .neutral-box svg {
+      color: #94a3b8;
+    }
+  
+    .negative-box svg {
+      color: #ef4444;
+    }
+}

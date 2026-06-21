@@ -13,11 +13,26 @@ import InsightCard from "../components/InsightCard";
 import SentimentTrendChart from "../components/SentimentTrendChart";
 
 import KeywordWordCloud3D from "../components/KeywordWordCloud3D";
+import { useState } from "react";
+import FilterBar from "../components/FilterBar";
 
 export default function Dashboard() {
+  const [searchTerm, setSearchTerm] = useState("");
+  const [sentimentFilter, setSentimentFilter] = useState("All");
+  const [topN, setTopN] = useState(10);
 
   return (
     <MainLayout>
+      <FilterBar
+        searchTerm={searchTerm}
+        setSearchTerm={setSearchTerm}
+
+        sentimentFilter={sentimentFilter}
+        setSentimentFilter={setSentimentFilter}
+
+        topN={topN}
+        setTopN={setTopN}
+      />
 
       <KPISection />
 
@@ -25,13 +40,23 @@ export default function Dashboard() {
 
         <SentimentPieChart />
 
-        <KeywordBarChart />
+        <KeywordBarChart
+          searchTerm={searchTerm}
+          topN={topN}
+          sentimentFilter={sentimentFilter}
+        />
 
       </div>
 
-      <KeywordWordCloud3D />
+      <KeywordWordCloud3D
+        searchTerm={searchTerm}
+        topN={topN}
+        sentimentFilter={sentimentFilter}
+      />
 
-      <SentimentTrendChart />
+      <SentimentTrendChart
+        sentimentFilter={sentimentFilter}
+      />
 
       <ActivityLineChart />
 

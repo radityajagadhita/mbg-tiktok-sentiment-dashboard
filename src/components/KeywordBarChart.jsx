@@ -1,4 +1,4 @@
-import keywordData from "../data/top_keywords_final_4.json";
+import keywordData from "../data/keyword_sentiment.json";
 
 import {
   BarChart,
@@ -11,8 +11,14 @@ import {
   Cell,
 } from "recharts";
 
-export default function KeywordBarChart() {
 
+export default function KeywordBarChart({searchTerm = "",
+  topN = 10,
+  sentimentFilter = "All", }) {
+  
+  console.log("searchTerm =", searchTerm);
+  console.log("typeof =", typeof searchTerm);
+  
   const colors = [
     "#3b82f6",
     "#22c55e",
@@ -25,9 +31,28 @@ export default function KeywordBarChart() {
     "#f97316",
     "#14b8a6",
   ];
+  
   const filteredKeywords = keywordData
-    .filter((item) => item.keyword && item.keyword.trim() !== "")
-    .slice(0, 10);
+  .filter((item) => {
+
+    const keywordMatch =
+      item.keyword
+        .toLowerCase()
+        .includes(
+          searchTerm.toLowerCase()
+        );
+
+    const sentimentMatch =
+      sentimentFilter === "All"
+        ? true
+        : item.sentiment === sentimentFilter;
+
+    return (
+      keywordMatch &&
+      sentimentMatch
+    );
+  })
+  .slice(0, topN);
 
   const dominantKeyword = filteredKeywords[0] ?? keywordData[0] ?? null;
 
@@ -108,7 +133,7 @@ export default function KeywordBarChart() {
         </BarChart>
       </ResponsiveContainer>
       <div className="keyword-strong-summary">
-        Kata paling dominan saat ini adalah <strong>{dominantKeyword?.keyword}</strong>
+        Kata paling dominan saat ini adalah <strong>{dominantKeyword?.keyword}{" "}</strong>
         dengan <strong>{dominantKeyword?.count.toLocaleString("id-ID")}</strong> kemunculan.
       </div>
           <br/>

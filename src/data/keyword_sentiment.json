@@ -1,0 +1,1502 @@
+[
+    {
+        "keyword": "makan",
+        "count": 3191,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "anak",
+        "count": 2684,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "gratis",
+        "count": 1976,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "gizi",
+        "count": 1818,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "makanan",
+        "count": 1699,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "sekolah",
+        "count": 1403,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "bergizi",
+        "count": 1272,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "sehat",
+        "count": 1171,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "program",
+        "count": 1102,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "bagus",
+        "count": 1028,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "enak",
+        "count": 957,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "ahli",
+        "count": 931,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "menu",
+        "count": 920,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "baik",
+        "count": 848,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "setuju",
+        "count": 815,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "suka",
+        "count": 789,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "burger",
+        "count": 778,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "betul",
+        "count": 726,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "dapur",
+        "count": 561,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "harus",
+        "count": 553,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "uang",
+        "count": 533,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "indonesia",
+        "count": 486,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "ayam",
+        "count": 469,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "masuk",
+        "count": 464,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "keren",
+        "count": 460,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "masak",
+        "count": 453,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "mending",
+        "count": 410,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "pernah",
+        "count": 396,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "salah",
+        "count": 376,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "tau",
+        "count": 376,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "alhamdulillah",
+        "count": 375,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "emang",
+        "count": 371,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "susu",
+        "count": 367,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "dia",
+        "count": 364,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "sekali",
+        "count": 352,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "pemerintah",
+        "count": 348,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "dikasih",
+        "count": 348,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "mantap",
+        "count": 344,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "pendidikan",
+        "count": 341,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "dokter",
+        "count": 336,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "daerah",
+        "count": 333,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "karna",
+        "count": 331,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "nasi",
+        "count": 329,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "sayur",
+        "count": 328,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "keracunan",
+        "count": 323,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "sesuai",
+        "count": 318,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "tiap",
+        "count": 310,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "setiap",
+        "count": 309,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "mie",
+        "count": 308,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "g",
+        "count": 308,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "ikan",
+        "count": 307,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "kerja",
+        "count": 306,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "ganti",
+        "count": 303,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "mana",
+        "count": 293,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "tan",
+        "count": 293,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "sendiri",
+        "count": 286,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "kaya",
+        "count": 284,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "rakyat",
+        "count": 281,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "pasti",
+        "count": 281,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "anakku",
+        "count": 280,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "daging",
+        "count": 277,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "terus",
+        "count": 273,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "iya",
+        "count": 271,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "saja",
+        "count": 269,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "menunya",
+        "count": 264,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "gitu",
+        "count": 264,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "dulu",
+        "count": 263,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "rumah",
+        "count": 263,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "tua",
+        "count": 262,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "padahal",
+        "count": 262,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "sangat",
+        "count": 257,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "baru",
+        "count": 252,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "programnya",
+        "count": 252,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "hanya",
+        "count": 241,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "lain",
+        "count": 241,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "buah",
+        "count": 239,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "bikin",
+        "count": 238,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "anggaran",
+        "count": 235,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "perlu",
+        "count": 233,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "paling",
+        "count": 231,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "pas",
+        "count": 229,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "mungkin",
+        "count": 228,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "belum",
+        "count": 228,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "penting",
+        "count": 228,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "bawa",
+        "count": 227,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "prabowo",
+        "count": 224,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "telur",
+        "count": 217,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "negara",
+        "count": 213,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "lapangan",
+        "count": 213,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "luar",
+        "count": 212,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "selalu",
+        "count": 211,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "akan",
+        "count": 211,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "harusnya",
+        "count": 210,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "kata",
+        "count": 209,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "seperti",
+        "count": 209,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "pake",
+        "count": 207,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "coba",
+        "count": 201,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "dana",
+        "count": 201,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "beli",
+        "count": 200,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "pun",
+        "count": 198,
+        "sentiment": "Positive"
+    },
+    {
+        "keyword": "anak",
+        "count": 2303,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "sekolah",
+        "count": 1473,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "burger",
+        "count": 1337,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "program",
+        "count": 1191,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "menu",
+        "count": 1135,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "dapur",
+        "count": 1083,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "belum",
+        "count": 941,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "ayam",
+        "count": 807,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "salah",
+        "count": 793,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "makanan",
+        "count": 739,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "kerja",
+        "count": 725,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "uang",
+        "count": 677,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "stop",
+        "count": 677,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "kacang",
+        "count": 672,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "baru",
+        "count": 653,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "susu",
+        "count": 653,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "my",
+        "count": 622,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "mending",
+        "count": 601,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "daerah",
+        "count": 595,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "pernah",
+        "count": 577,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "tau",
+        "count": 521,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "sticker",
+        "count": 512,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "anakku",
+        "count": 503,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "dikasih",
+        "count": 502,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "masak",
+        "count": 498,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "kaya",
+        "count": 485,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "keracunan",
+        "count": 485,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "mana",
+        "count": 484,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "iya",
+        "count": 480,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "saja",
+        "count": 466,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "tempe",
+        "count": 453,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "nasi",
+        "count": 450,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "mie",
+        "count": 450,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "indonesia",
+        "count": 449,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "pemerintah",
+        "count": 447,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "harus",
+        "count": 446,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "lapangan",
+        "count": 439,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "god",
+        "count": 433,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "goreng",
+        "count": 432,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "terus",
+        "count": 430,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "ganti",
+        "count": 426,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "punya",
+        "count": 423,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "pasti",
+        "count": 417,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "rakyat",
+        "count": 407,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "lu",
+        "count": 402,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "emang",
+        "count": 399,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "tiap",
+        "count": 397,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "tan",
+        "count": 392,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "gitu",
+        "count": 389,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "dpr",
+        "count": 389,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "sayur",
+        "count": 382,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "sekali",
+        "count": 381,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "ikan",
+        "count": 380,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "presiden",
+        "count": 377,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "dia",
+        "count": 376,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "negara",
+        "count": 375,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "sendiri",
+        "count": 372,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "tempat",
+        "count": 367,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "untung",
+        "count": 366,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "pake",
+        "count": 364,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "makan",
+        "count": 363,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "bikin",
+        "count": 357,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "dana",
+        "count": 356,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "telur",
+        "count": 345,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "prabowo",
+        "count": 342,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "duit",
+        "count": 339,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "jt",
+        "count": 336,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "anggaran",
+        "count": 330,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "menunya",
+        "count": 322,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "kenapa",
+        "count": 321,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "tahu",
+        "count": 321,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "gini",
+        "count": 321,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "beli",
+        "count": 319,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "liat",
+        "count": 317,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "doang",
+        "count": 314,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "setiap",
+        "count": 311,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "roti",
+        "count": 307,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "lain",
+        "count": 304,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "kadang",
+        "count": 297,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "sukro",
+        "count": 294,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "sesuai",
+        "count": 294,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "g",
+        "count": 293,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "coba",
+        "count": 292,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "daging",
+        "count": 283,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "padahal",
+        "count": 282,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "gaji",
+        "count": 282,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "pas",
+        "count": 281,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "sd",
+        "count": 280,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "karna",
+        "count": 279,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "telor",
+        "count": 278,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "kek",
+        "count": 277,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "juta",
+        "count": 277,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "buah",
+        "count": 270,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "disini",
+        "count": 267,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "k",
+        "count": 266,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "satu",
+        "count": 264,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "sini",
+        "count": 263,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "dokter",
+        "count": 259,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "amanah",
+        "count": 259,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "masa",
+        "count": 259,
+        "sentiment": "Neutral"
+    },
+    {
+        "keyword": "tutup",
+        "count": 1386,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "korupsi",
+        "count": 1193,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "anak",
+        "count": 873,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "jangan",
+        "count": 807,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "basi",
+        "count": 635,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "program",
+        "count": 625,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "sekolah",
+        "count": 506,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "korup",
+        "count": 481,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "kurang",
+        "count": 479,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "makanan",
+        "count": 470,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "dapur",
+        "count": 440,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "kecil",
+        "count": 360,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "tolong",
+        "count": 312,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "salah",
+        "count": 305,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "menu",
+        "count": 300,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "ayam",
+        "count": 299,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "bau",
+        "count": 265,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "baru",
+        "count": 253,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "susah",
+        "count": 252,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "uang",
+        "count": 251,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "buang",
+        "count": 251,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "dana",
+        "count": 247,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "mending",
+        "count": 245,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "belum",
+        "count": 241,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "kerja",
+        "count": 239,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "negara",
+        "count": 224,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "karna",
+        "count": 222,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "anggaran",
+        "count": 217,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "makan",
+        "count": 215,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "terus",
+        "count": 208,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "suka",
+        "count": 203,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "rakyat",
+        "count": 203,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "daerah",
+        "count": 201,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "pemerintah",
+        "count": 197,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "indonesia",
+        "count": 193,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "nasi",
+        "count": 191,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "burger",
+        "count": 191,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "mahal",
+        "count": 189,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "sayur",
+        "count": 189,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "aneh",
+        "count": 183,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "enak",
+        "count": 180,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "harus",
+        "count": 178,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "masak",
+        "count": 176,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "keracunan",
+        "count": 174,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "prabowo",
+        "count": 170,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "masalah",
+        "count": 167,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "pasti",
+        "count": 166,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "saja",
+        "count": 165,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "bikin",
+        "count": 164,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "hentikan",
+        "count": 162,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "duit",
+        "count": 161,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "kaya",
+        "count": 161,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "kadang",
+        "count": 160,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "dikasih",
+        "count": 160,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "presiden",
+        "count": 159,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "ladang",
+        "count": 158,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "susu",
+        "count": 158,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "tau",
+        "count": 156,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "lapangan",
+        "count": 149,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "pas",
+        "count": 148,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "hapus",
+        "count": 148,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "mana",
+        "count": 147,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "harga",
+        "count": 146,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "pernah",
+        "count": 144,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "langsung",
+        "count": 140,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "dulu",
+        "count": 138,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "dia",
+        "count": 137,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "iya",
+        "count": 137,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "sesuai",
+        "count": 137,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "tiap",
+        "count": 137,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "anakku",
+        "count": 137,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "ganti",
+        "count": 137,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "lu",
+        "count": 131,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "sekarang",
+        "count": 129,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "lain",
+        "count": 128,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "parah",
+        "count": 128,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "hanya",
+        "count": 126,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "lahan",
+        "count": 125,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "gitu",
+        "count": 123,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "stop",
+        "count": 122,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "bagus",
+        "count": 120,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "besar",
+        "count": 119,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "amanah",
+        "count": 119,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "masa",
+        "count": 118,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "katanya",
+        "count": 117,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "sering",
+        "count": 117,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "punya",
+        "count": 116,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "bahan",
+        "count": 116,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "programnya",
+        "count": 116,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "tahu",
+        "count": 114,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "telur",
+        "count": 113,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "setiap",
+        "count": 112,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "ikan",
+        "count": 112,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "beli",
+        "count": 110,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "makin",
+        "count": 109,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "daging",
+        "count": 108,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "doang",
+        "count": 108,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "kenapa",
+        "count": 105,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "emang",
+        "count": 104,
+        "sentiment": "Negative"
+    },
+    {
+        "keyword": "kebanyakan",
+        "count": 104,
+        "sentiment": "Negative"
+    }
+]

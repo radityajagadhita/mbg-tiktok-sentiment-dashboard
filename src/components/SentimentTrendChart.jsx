@@ -11,8 +11,29 @@ import {
   Legend,
 } from "recharts";
 
-export default function SentimentTrendChart() {
-  return (
+export default function SentimentTrendChart({
+  sentimentFilter = "All",
+}) {
+
+  const positiveOpacity =
+    sentimentFilter === "All" ||
+    sentimentFilter === "Positive"
+      ? 1
+      : 0.15;
+
+  const neutralOpacity =
+    sentimentFilter === "All" ||
+    sentimentFilter === "Neutral"
+      ? 1
+      : 0.15;
+
+  const negativeOpacity =
+    sentimentFilter === "All" ||
+    sentimentFilter === "Negative"
+      ? 1
+      : 0.15;
+
+    return (
     <div className="card sentiment-trend-chart" id="sentiment-trend">
       <h2>Sentiment Trend</h2>
 
@@ -53,6 +74,7 @@ export default function SentimentTrendChart() {
             dataKey="Positive"
             stroke="#22c55e"
             strokeWidth={3}
+            strokeOpacity={positiveOpacity}
           />
 
           <Line
@@ -60,6 +82,7 @@ export default function SentimentTrendChart() {
             dataKey="Neutral"
             stroke="#9ba6b6"
             strokeWidth={3}
+            strokeOpacity={neutralOpacity}
           />
 
           <Line
@@ -67,6 +90,7 @@ export default function SentimentTrendChart() {
             dataKey="Negative"
             stroke="#ef4444"
             strokeWidth={3}
+            strokeOpacity={negativeOpacity}
           />
 
         </LineChart>

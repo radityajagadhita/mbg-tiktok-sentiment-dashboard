@@ -8,16 +8,32 @@ const quickLinks = [
 ];
 
 export default function Header() {
-  return (
-    <div className="header">
-      <div className="header-left-group">
-        <nav className="quick-nav" aria-label="Jump to dashboard sections">
+    return (
+        <div className="header">
+            <div className="header-row">
+        <nav
+          className="quick-nav"
+          aria-label="Jump to dashboard sections"
+        >
           {quickLinks.map((item) => (
-            <a key={item.target} className="nav-chip" href={item.target}>
+            <a
+              key={item.target}
+              className="nav-chip"
+              href={item.target}
+            >
               {item.label}
             </a>
           ))}
         </nav>
+
+        <a
+          href="https://www.kaggle.com/datasets/sinryurifal/dataset-komentar-tiktok-mbg-makan-bergizi-gratis"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="dataset-button"
+        >
+          Dataset Source
+        </a>
       </div>
     </div>
   );

@@ -629,3 +629,39 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+.header-row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 12px;
+}
+
+.quick-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.dataset-button {
+  margin-left: auto;
+  /* dorong ke paling kanan */
+
+  padding: 6px 16px;
+  border-radius: 10px;
+
+  background: linear-gradient(135deg,
+      #2563eb,
+      #06b6d4);
+
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  white-space: nowrap;
+
+  transition: all 0.3s ease;
+}
+
+.dataset-button:hover {
+  transform: translateY(-2px);
+}

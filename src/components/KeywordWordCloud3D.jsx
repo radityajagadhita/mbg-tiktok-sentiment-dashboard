@@ -86,22 +86,25 @@ export default function KeywordWordCloud3D({ searchTerm = "",
   const [pointer, setPointer] = useState({ x: 50, y: 50 });
   const [isReady, setIsReady] = useState(false);
 
-  const words = useMemo(
-    () =>
-      getCleanKeywords(
-        searchTerm,
-        topN,
-        sentimentFilter
-      ),
+  const words = useMemo( () => getCleanKeywords(searchTerm, topN, sentimentFilter ),
     [
       searchTerm,
       topN,
       sentimentFilter,
     ]
   );
-  const mainList = useMemo(() => makeMainList(words), [words]);
-  const fieldList = useMemo(() => makeFieldList(words), [words]);
-  const strongest = words[0];
+
+ const mainList = useMemo(
+    () => (words.length ? makeMainList(words) : []),
+    [words]
+  );
+
+  const fieldList = useMemo(
+    () => (words.length ? makeFieldList(words) : []),
+    [words]
+  );
+  const strongest = words.length > 0 ? words[0] : null;
+  const hasData = words.length > 0;
   const displayWord = lockedWord ?? activeWord;
 
   useEffect(() => {
@@ -266,55 +269,87 @@ export default function KeywordWordCloud3D({ searchTerm = "",
       <div className="chart-title-row">
         <div>
           <h2>Top Keywords 3D Word Cloud</h2>
-          <p className="chart-subtitle">
+          <p className="chart-subtitle" style={{ color: "#b6bec9" }}>
             Arahkan pointer ke kata untuk melihat jumlah kemunculannya.
           </p>
         </div>
       </div>
 
-      <div
-        className={`wordcloud-space ${isReady ? "is-ready" : ""}`}
-        onMouseMove={handleMouseMove}
-        onMouseLeave={() => setActiveWord(null)}
-        ref={stageRef}
-      >
-        <div className="wordcloud-tunnel" />
-        <canvas
-          aria-hidden="true"
-          className="wordcloud-canvas wordcloud-canvas-field"
-          ref={fieldCanvasRef}
-        />
-        <canvas
-          aria-label="Word cloud interaktif untuk keyword komentar TikTok"
-          className="wordcloud-canvas wordcloud-canvas-main"
-          ref={mainCanvasRef}
-        />
-
-        {!isReady && (
-          <div className="wordcloud-loading">Rendering keyword space...</div>
-        )}
-
-        {displayWord && (
-          <button
-            className="wordcloud-tooltip"
-            onClick={clearLockedWord}
-            style={{
-              left: `${pointer.x + 16}px`,
-              top: `${Math.max(pointer.y - 20, 18)}px`,
-            }}
-            type="button"
+      {!hasData ? (
+        <div
+          style={{
+            height: "520px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            color: "#94a3b8",
+            fontSize: "18px",
+            fontWeight: "600",
+          }}
+        >
+          No keyword found
+        </div>
+      ) : (
+        <>
+          <div
+            className={`wordcloud-space ${isReady ? "is-ready" : ""}`}
+            onMouseMove={handleMouseMove}
+            onMouseLeave={() => setActiveWord(null)}
+            ref={stageRef}
           >
-            <strong>{displayWord.keyword}</strong>
-            <span>{displayWord.count.toLocaleString("id-ID")} kemunculan</span>
-          </button>
-        )}
-      </div>
+            <div className="wordcloud-tunnel" />
 
-      <p className="wordcloud-summary" style={{ marginTop: "12px" , color: "#ffffff" }}>
-        Keyword paling menonjol adalah <strong>{strongest?.keyword}</strong>{" "}
-        dengan <strong>{strongest?.count.toLocaleString("id-ID")}</strong>{" "}
-        kemunculan. Klik kata untuk mengunci detailnya.
-      </p>
+            <canvas
+              aria-hidden="true"
+              className="wordcloud-canvas wordcloud-canvas-field"
+              ref={fieldCanvasRef}
+            />
+
+            <canvas
+              aria-label="Word cloud interaktif untuk keyword komentar TikTok"
+              className="wordcloud-canvas wordcloud-canvas-main"
+              ref={mainCanvasRef}
+            />
+
+            {!isReady && (
+              <div className="wordcloud-loading">
+                Rendering keyword space...
+              </div>
+            )}
+
+            {displayWord && (
+              <button
+                className="wordcloud-tooltip"
+                onClick={clearLockedWord}
+                style={{
+                  left: `${pointer.x + 16}px`,
+                  top: `${Math.max(pointer.y - 20, 18)}px`,
+                }}
+                type="button"
+              >
+                <strong>{displayWord.keyword}</strong>
+
+                <span>
+                  {displayWord.count.toLocaleString("id-ID")} kemunculan
+                </span>
+              </button>
+            )}
+          </div>
+
+          {strongest && (
+            <p className="wordcloud-summary" style={{ color: "#ffffff" }}>
+              Keyword paling menonjol adalah
+              <strong> {strongest.keyword} </strong>
+              dengan
+              <strong>
+                {" "}
+                {strongest.count.toLocaleString("id-ID")}
+              </strong>
+              kemunculan.
+            </p>
+          )}
+        </>
+      )}
     </div>
   );
 }

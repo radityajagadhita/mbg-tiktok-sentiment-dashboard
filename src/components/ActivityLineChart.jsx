@@ -81,7 +81,7 @@ export default function ActivityLineChart() {
       <div className="chart-title-row">
         <div>
           <h2>Daily Activity</h2>
-          <p className="chart-subtitle">
+          <p className="chart-subtitle" style={{ color: "#b6bec9" }}>
             Aktivitas komentar harian. Gunakan{" "}
             <strong>slider di bawah</strong> untuk zoom ke rentang tanggal
             tertentu.

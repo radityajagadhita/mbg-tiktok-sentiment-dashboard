@@ -53,7 +53,26 @@ export default function KeywordBarChart({searchTerm = "",
     );
   })
   .slice(0, topN);
+  
+  if (filteredKeywords.length === 0) {
+    return (
+      <div className="card">
+        <h2>Top Keywords</h2>
 
+        <div
+          style={{
+            height: "400px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            color: "#94a3b8",
+          }}
+        >
+          No keyword found
+        </div>
+      </div>
+    );
+  }
   const dominantKeyword = filteredKeywords[0] ?? keywordData[0] ?? null;
 
   return (
@@ -61,7 +80,9 @@ export default function KeywordBarChart({searchTerm = "",
       <div className="chart-title-row">
         <div>
           <h2>Top Keywords</h2>
-          <p className="chart-subtitle">Peringkat kata dominan dari data komentar terbaru.</p>
+          <p className="chart-subtitle" style={{ color: "#b6bec9" }}>
+            Peringkat kata dominan dari data komentar terbaru.
+          </p>
         </div>
       </div>
 

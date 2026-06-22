@@ -65,18 +65,22 @@ export default function InsightCard() {
       className="card insight-card futuristic-card"
       id="insight-summary"
     >
-
-      <h2>Executive Insight</h2>
+      <div className="insight-header">
+        <h2>Executive Insight</h2>
+        <span className="insight-badge">
+          AI Generated Summary
+        </span>
+      </div>
 
       <div className="insight-highlights">
 
         <div className="insight-item">
           <span>
-              <FaBrain className="insight-icon" />
-              Dominant Sentiment
-            </span>
+            <FaBrain className="insight-icon" />
+            Dominant Sentiment
+          </span>
           <strong>
-            {dominant.name} ({percentage}%)
+            {dominant.name}
           </strong>
         </div>
 
@@ -112,69 +116,87 @@ export default function InsightCard() {
 
       </div>
 
-      <div className="insight-body">
+      <div className="insight-section">
 
         <h3 className="insight-section-title">
           <FaCircleInfo />
           Key Findings
         </h3>
 
-        <ul>
+        <ul className="insight-list">
 
           <li>
-            {insightText}
+            Sentimen <strong>{dominant.name}</strong> mendominasi
+            percakapan dengan kontribusi sebesar
+            <strong> {percentage}% </strong>
+            dari seluruh komentar yang dianalisis.
           </li>
 
           <li>
-            Keyword paling dominan adalah{" "}
-            <strong>{topKeyword.keyword}</strong>
-            {" "}dengan{" "}
+            Kata kunci yang paling sering muncul adalah
+            <strong> {topKeyword.keyword} {" "}</strong>
+            dengan frekuensi
             <strong>
+              {" "}
               {topKeyword.count.toLocaleString("id-ID")}
-            </strong>{" "}
-            kemunculan.
+              {" "}
+            </strong>
+            kali.
           </li>
 
           <li>
-            Dashboard saat ini menganalisis{" "}
+            Dataset mencakup
             <strong>
+              {" "}
               {stats.total_comments.toLocaleString("id-ID")}
-            </strong>{" "}
-            komentar dari{" "}
+              {" "}
+            </strong>
+            komentar dari
             <strong>
+              {" "}
               {stats.total_users.toLocaleString("id-ID")}
-            </strong>{" "}
-            pengguna.
+              {" "}
+            </strong>
+            pengguna dan
+            <strong> {stats.total_videos}</strong> {" "}
+            video TikTok.
           </li>
 
         </ul>
 
       </div>
 
+      <div className="insight-section">
+
+        <h3 className="insight-section-title">
+          <FaArrowTrendUp />
+          Interpretation
+        </h3>
+
+        <p className="insight-paragraph">
+          {insightText}
+        </p>
+
+      </div>
+
       <div className="sentiment-breakdown">
 
         <div className="positive-box">
-          <span>
-            <FaArrowTrendUp />
-            Positive</span>
+          <span>Positive</span>
           <strong>
             {positive.toLocaleString("id-ID")}
           </strong>
         </div>
 
         <div className="neutral-box">
-          <span>
-            <FaCircleInfo />
-            Neutral</span>
+          <span>Neutral</span>
           <strong>
             {neutral.toLocaleString("id-ID")}
           </strong>
         </div>
 
         <div className="negative-box">
-          <span>
-            <FaTriangleExclamation />
-            Negative</span>
+          <span>Negative</span>
           <strong>
             {negative.toLocaleString("id-ID")}
           </strong>

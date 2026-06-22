@@ -230,22 +230,12 @@
         "sentiment": "Positive"
     },
     {
-        "keyword": "tiap",
-        "count": 310,
-        "sentiment": "Positive"
-    },
-    {
         "keyword": "setiap",
         "count": 309,
         "sentiment": "Positive"
     },
     {
         "keyword": "mie",
-        "count": 308,
-        "sentiment": "Positive"
-    },
-    {
-        "keyword": "g",
         "count": 308,
         "sentiment": "Positive"
     },
@@ -266,11 +256,6 @@
     },
     {
         "keyword": "mana",
-        "count": 293,
-        "sentiment": "Positive"
-    },
-    {
-        "keyword": "tan",
         "count": 293,
         "sentiment": "Positive"
     },
